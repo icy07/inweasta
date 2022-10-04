@@ -426,6 +426,9 @@ body {
   }
 }
 @media (max-width: 31.25em) {
+  .main-text--annie .panel__person-img-block {
+    margin: 0px 0px 1.875rem 0px;
+  }
   .main-text--annie .vh-wrapper--managment {
     height: 26.25rem;
   }
@@ -464,6 +467,11 @@ body {
     height: 21.875rem;
   }
 }
+@media (max-width: 59.375em) {
+  .text-wrapper {
+    height: auto;
+  }
+}
 @media (max-height: 55em) and (min-width: 75.0625em) {
   .text-wrapper {
     height: 29.1875rem;
@@ -487,11 +495,6 @@ body {
 @media (max-height: 33.75em) {
   .text-wrapper {
     height: 14.6875rem;
-  }
-}
-@media (max-width: 23.125em) {
-  .text-wrapper {
-    height: 17.6875rem;
   }
 }
 @media (max-height: 32.8125em) and (max-width: 31.25em) {
