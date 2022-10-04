@@ -407,18 +407,18 @@ body {
 }
 @media (min-width: 120em) {
   .text-wrapper {
-    height: 33.75rem;
+    height: 28.125rem;
   }
 }
 @media (min-width: 23.125em) and (max-width: 120em) {
-  @supports (height: clamp( 21.875rem , 19.0403225806rem  +  12.2580645161vw , 33.75rem )) {
+  @supports (height: clamp( 21.875rem , 20.3830645161rem  +  6.4516129032vw , 28.125rem )) {
     .text-wrapper {
-      height: clamp( 21.875rem , 19.0403225806rem  +  12.2580645161vw , 33.75rem );
+      height: clamp( 21.875rem , 20.3830645161rem  +  6.4516129032vw , 28.125rem );
     }
   }
-  @supports not (height: clamp( 21.875rem , 19.0403225806rem  +  12.2580645161vw , 33.75rem )) {
+  @supports not (height: clamp( 21.875rem , 20.3830645161rem  +  6.4516129032vw , 28.125rem )) {
     .text-wrapper {
-      height: calc(21.875rem + 11.875 * (100vw - 23.125rem) / 96.875);
+      height: calc(21.875rem + 6.25 * (100vw - 23.125rem) / 96.875);
     }
   }
 }
@@ -1249,7 +1249,7 @@ body {
 .touch .panel__spoiler-title {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding-right: 0;
 }
 .touch .panel__spoiler-title::after {
@@ -1298,7 +1298,6 @@ body {
   }
 }
 .panel__spoiler-body-wrapper p {
-  flex: 0 1 50%;
   line-height: 1.6666666667;
 }
 @media (min-width: 91.25em) {
@@ -1327,6 +1326,9 @@ body {
   .panel__spoiler-body-wrapper p {
     font-size: 1.125rem;
   }
+}
+.panel__spoiler-body-wrapper p:first-child {
+  float: left;
 }
 .panel__spoiler-body-wrapper p:not(:last-child) {
   margin: 0px 2.5rem 0px 0px;
