@@ -959,7 +959,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-@media (min-height: 55.0625em) {
+@media (min-height: 55.0625em) and (min-width: 75.0625em) {
   .panel__container--contants .panel__main-text {
     font-size: 6.25rem;
   }
