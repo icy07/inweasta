@@ -147,6 +147,11 @@ body {
     transform: translateX(-100%);
   }
 }
+@media (max-height: 34.375em) {
+  .page__wrapper--contacts {
+    padding: 6.25rem 0px 0 0px;
+  }
+}
 
 .circle {
   background: url("../img/circle.png") center/contain no-repeat;
@@ -279,6 +284,7 @@ body {
   justify-content: flex-end;
   padding: 0px 0px 6.25rem 0px;
 }
+
 @media (max-width: 37.5em) {
   .vh-wrapper--managment {
     height: auto;
@@ -952,6 +958,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media (min-height: 55.0625em) {
+  .panel__container--contants .panel__main-text {
+    font-size: 6.25rem;
+  }
+  .panel__container--contants .thin-text {
+    font-size: 3.75rem;
+  }
+}
+@media (max-height: 34.375em) {
+  .panel__container--contants .vh-wrapper {
+    height: 100%;
+  }
 }
 .panel__arrow {
   transition: 0.2s;
